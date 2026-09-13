@@ -102,7 +102,7 @@ document.querySelectorAll(".stat-num").forEach((el) => statIo.observe(el));
 const phrases = [
   "scale without losing clarity.",
   "recover themselves at 3am.",
-  "turn GPT into real automation.",
+  "turn AI into real automation.",
   "resolve identities, race-safe.",
   "quietly make teams faster.",
 ];

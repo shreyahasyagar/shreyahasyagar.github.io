@@ -1,6 +1,6 @@
 :root {
-  --bg: #05070d;
-  --bg-2: #080b14;
+  --bg: #0b0a10;
+  --bg-2: #100e18;
   --surface: rgba(255, 255, 255, 0.035);
   --surface-solid: #0d1120;
   --border: rgba(255, 255, 255, 0.09);
@@ -8,11 +8,11 @@
   --text: #eef2ff;
   --text-dim: #aeb8d4;
   --text-mut: #6d7799;
-  --c1: #7c8bff;   /* indigo */
-  --c2: #b18cff;   /* violet */
-  --c3: #43e6c6;   /* teal   */
-  --c4: #ff8fb1;   /* pink   */
-  --grad: linear-gradient(120deg, #7c8bff 0%, #b18cff 45%, #43e6c6 100%);
+  --c1: #a78bfa;   /* indigo */
+  --c2: #f472b6;   /* violet */
+  --c3: #fbbf24;   /* teal   */
+  --c4: #fb7185;   /* pink   */
+  --grad: linear-gradient(120deg, #a78bfa 0%, #f472b6 45%, #fbbf24 100%);
   --grad-soft: linear-gradient(120deg, rgba(124,139,255,.16), rgba(177,140,255,.10), rgba(67,230,198,.14));
   --radius: 20px;
   --radius-sm: 12px;
@@ -32,7 +32,7 @@ body {
   overflow-x: hidden;
   cursor: default;
 }
-::selection { background: rgba(124, 139, 255, 0.35); color: #fff; }
+::selection { background: rgba(167, 139, 250, 0.35); color: #fff; }
 a { color: inherit; text-decoration: none; }
 h1, h2, h3, .brand-name { font-family: "Sora", "Inter", sans-serif; }
 
@@ -40,10 +40,10 @@ h1, h2, h3, .brand-name { font-family: "Sora", "Inter", sans-serif; }
 .aurora {
   position: fixed; inset: -20%; z-index: -3; pointer-events: none;
   background:
-    radial-gradient(40% 40% at 20% 15%, rgba(124, 139, 255, 0.28), transparent 60%),
-    radial-gradient(35% 45% at 82% 20%, rgba(177, 140, 255, 0.22), transparent 60%),
-    radial-gradient(45% 40% at 60% 90%, rgba(67, 230, 198, 0.18), transparent 60%),
-    radial-gradient(40% 40% at 10% 80%, rgba(255, 143, 177, 0.14), transparent 60%);
+    radial-gradient(40% 40% at 20% 15%, rgba(167, 139, 250, 0.28), transparent 60%),
+    radial-gradient(35% 45% at 82% 20%, rgba(244, 114, 182, 0.22), transparent 60%),
+    radial-gradient(45% 40% at 60% 90%, rgba(251, 191, 36, 0.18), transparent 60%),
+    radial-gradient(40% 40% at 10% 80%, rgba(251, 113, 133, 0.14), transparent 60%);
   filter: blur(40px);
   animation: drift 22s ease-in-out infinite alternate;
 }
@@ -58,14 +58,14 @@ h1, h2, h3, .brand-name { font-family: "Sora", "Inter", sans-serif; }
 }
 .spotlight {
   position: fixed; top: 0; left: 0; width: 480px; height: 480px; z-index: -1; pointer-events: none;
-  background: radial-gradient(circle, rgba(124, 139, 255, 0.10), transparent 65%);
+  background: radial-gradient(circle, rgba(167, 139, 250, 0.10), transparent 65%);
   transform: translate(-50%, -50%); transition: opacity .4s; opacity: 0;
 }
 
 /* ---------- Scroll progress ---------- */
 .scroll-progress {
   position: fixed; top: 0; left: 0; height: 3px; width: 0%; z-index: 100;
-  background: var(--grad); box-shadow: 0 0 14px rgba(124, 139, 255, 0.7);
+  background: var(--grad); box-shadow: 0 0 14px rgba(167, 139, 250, 0.7);
 }
 
 /* ---------- Preloader ---------- */
@@ -94,14 +94,14 @@ h1, h2, h3, .brand-name { font-family: "Sora", "Inter", sans-serif; }
 }
 .nav.scrolled {
   padding-top: 12px; padding-bottom: 12px;
-  background: rgba(5, 7, 13, 0.72); backdrop-filter: blur(16px) saturate(140%);
+  background: rgba(11, 10, 16, 0.72); backdrop-filter: blur(16px) saturate(140%);
   border-color: var(--border);
 }
 .brand { display: flex; align-items: center; gap: 14px; margin-right: auto; }
 .brand-mark {
   display: grid; place-items: center; width: 42px; height: 42px; border-radius: 12px;
   background: var(--grad); color: #060814; font-weight: 800; font-family: "Sora"; font-size: 15px;
-  box-shadow: 0 8px 24px -8px rgba(124, 139, 255, 0.7);
+  box-shadow: 0 8px 24px -8px rgba(167, 139, 250, 0.7);
 }
 .brand-meta { display: flex; flex-direction: column; line-height: 1.2; }
 .brand-name { font-size: 15px; font-weight: 700; }
@@ -124,10 +124,10 @@ h1, h2, h3, .brand-name { font-family: "Sora", "Inter", sans-serif; }
   cursor: pointer; border: 1px solid transparent; position: relative; overflow: hidden;
   transition: transform .25s var(--ease), box-shadow .25s, border-color .25s, background .25s;
 }
-.btn-primary { background: var(--grad); color: #070a14; box-shadow: 0 14px 34px -12px rgba(124, 139, 255, 0.7); }
-.btn-primary:hover { box-shadow: 0 18px 44px -12px rgba(124, 139, 255, 0.9); }
+.btn-primary { background: var(--grad); color: #070a14; box-shadow: 0 14px 34px -12px rgba(167, 139, 250, 0.7); }
+.btn-primary:hover { box-shadow: 0 18px 44px -12px rgba(167, 139, 250, 0.9); }
 .btn-ghost { background: var(--surface); border-color: var(--border-strong); color: var(--text); }
-.btn-ghost:hover { border-color: var(--c1); background: rgba(124, 139, 255, 0.10); }
+.btn-ghost:hover { border-color: var(--c1); background: rgba(167, 139, 250, 0.10); }
 
 /* ---------- Hero ---------- */
 .hero {
@@ -200,7 +200,9 @@ p { color: var(--text-dim); }
 .skill-card::after { content: ""; position: absolute; inset: 0; background: var(--grad-soft); opacity: 0; transition: opacity .3s; pointer-events: none; }
 .skill-card:hover { border-color: var(--border-strong); box-shadow: var(--shadow); }
 .skill-card:hover::after { opacity: 1; }
-.skill-ic { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 12px; background: var(--grad-soft); border: 1px solid var(--border); font-size: 18px; margin-bottom: 16px; font-family: "JetBrains Mono"; color: var(--c3); }
+.skill-ic { width: 46px; height: 46px; display: grid; place-items: center; border-radius: 13px; background: var(--grad-soft); border: 1px solid var(--border-strong); margin-bottom: 16px; color: var(--c2); box-shadow: inset 0 1px 0 rgba(255,255,255,.06); }
+.skill-ic svg { width: 23px; height: 23px; }
+.skill-card:hover .skill-ic { color: var(--c1); transform: translateY(-2px); transition: transform .3s var(--ease), color .3s; }
 .skill-card h3 { font-size: 16px; margin-bottom: 16px; position: relative; z-index: 1; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; position: relative; z-index: 1; }
 .chips span { font-family: "JetBrains Mono", monospace; font-size: 11.5px; padding: 6px 11px; background: rgba(255,255,255,.04); border: 1px solid var(--border); border-radius: 8px; color: var(--text-dim); }
@@ -249,6 +251,10 @@ p { color: var(--text-dim); }
   max-width: 720px; margin: 44px auto 0; background: var(--surface); border: 1px solid var(--border);
   border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; backdrop-filter: blur(10px);
 }
+.contact-card { padding: 40px clamp(22px, 4vw, 44px); }
+.contact-actions { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+.btn-lg { padding: 15px 28px; font-size: 15px; }
+.contact-foot { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 26px; }
 .contact-tabs { display: flex; gap: 4px; padding: 10px; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
 .tab { flex: 1; min-width: 120px; padding: 12px 14px; background: none; border: 0; border-radius: 12px; color: var(--text-dim); font-family: "Inter"; font-size: 14px; font-weight: 500; cursor: pointer; transition: background .2s, color .2s; }
 .tab:hover { color: var(--text); background: var(--surface); }
@@ -262,9 +268,9 @@ p { color: var(--text-dim); }
 a.pane-value:hover { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .pane-note { font-size: 14px; color: var(--text-mut); margin-bottom: 22px; }
 .pane-actions { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
-.social-links { display: flex; flex-direction: column; gap: 10px; margin-top: 18px; }
+.social-links { display: flex; flex-direction: column; gap: 10px; margin-top: 26px; }
 .social-row { display: flex; align-items: center; gap: 14px; padding: 15px 18px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); transition: border-color .25s, transform .25s, background .25s; }
-.social-row:hover { border-color: var(--c1); transform: translateX(4px); background: rgba(124,139,255,.08); }
+.social-row:hover { border-color: var(--c1); transform: translateX(4px); background: rgba(167,139,250,.08); }
 .s-ic { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 9px; background: var(--grad); color: #070a14; font-weight: 700; font-size: 13px; font-family: "JetBrains Mono"; }
 .s-name { font-weight: 600; }
 .s-handle { color: var(--text-mut); font-family: "JetBrains Mono", monospace; font-size: 13px; margin-left: auto; }

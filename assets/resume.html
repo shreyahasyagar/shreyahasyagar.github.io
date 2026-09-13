@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<style>
+  @page { size: A4; margin: 14mm 15mm; }
+  * { box-sizing: border-box; }
+  body { font-family: "Helvetica Neue", Arial, sans-serif; color: #1a1a22; font-size: 10.3px; line-height: 1.42; margin: 0; }
+  h1 { font-size: 21px; letter-spacing: .3px; margin: 0; color: #0f0f16; }
+  .role { font-size: 10.5px; color: #5b5570; margin: 3px 0 5px; font-weight: 600; }
+  .contact { font-size: 9.6px; color: #444; }
+  .contact a { color: #6d3bd1; text-decoration: none; }
+  h2 { font-size: 11px; text-transform: uppercase; letter-spacing: 1.2px; color: #6d3bd1; margin: 14px 0 5px; border-bottom: 1.4px solid #e5def5; padding-bottom: 3px; }
+  .job { margin-bottom: 9px; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; }
+  .job-title { font-weight: 700; font-size: 10.6px; }
+  .job-org { color: #5b5570; font-weight: 600; }
+  .job-date { color: #6b6b76; font-size: 9.4px; white-space: nowrap; }
+  ul { margin: 3px 0 0; padding-left: 15px; }
+  li { margin-bottom: 2.2px; }
+  p { margin: 2px 0; }
+  .sk { margin: 1.5px 0; }
+  .sk b { color: #0f0f16; }
+  .two { display: flex; justify-content: space-between; gap: 20px; }
+</style>
+</head>
+<body>
+  <h1>SHREYA UDAY HASYAGAR</h1>
+  <div class="role">Senior Software Engineer — Python · AWS · Distributed Data Systems · Applied AI</div>
+  <div class="contact">
+    Bengaluru, India &nbsp;•&nbsp; <a href="mailto:shreya.uday.hasyagar@gmail.com">shreya.uday.hasyagar@gmail.com</a>
+    &nbsp;•&nbsp; <a href="https://linkedin.com/in/shreya-hasyagar">linkedin.com/in/shreya-hasyagar</a>
+    &nbsp;•&nbsp; <a href="https://github.com/shreyahasyagar">github.com/shreyahasyagar</a>
+  </div>
+
+  <h2>Professional Summary</h2>
+  <p>Senior Software Engineer with 4+ years building production, event-driven data-enrichment platforms on AWS. Specializes in distributed serverless pipelines, entity resolution, and applied AI / LLM systems in Python. Owns work end to end — system design, reliability engineering, and AI-assisted automation across multi-tenant microservices. Experienced working in a remote-first, async environment.</p>
+
+  <h2>Skills</h2>
+  <div class="sk"><b>Languages:</b> Python · SQL · JavaScript / TypeScript · Bash</div>
+  <div class="sk"><b>Backend &amp; APIs:</b> FastAPI · Flask · Django REST · SQLAlchemy · asyncio · REST design (idempotency, pagination, auth)</div>
+  <div class="sk"><b>Applied AI / LLM:</b> OpenAI GPT-4 / 4o · prompt engineering · RAG · vector databases · evaluation harnesses · MCP · LangGraph agents</div>
+  <div class="sk"><b>Cloud (AWS):</b> Lambda · Step Functions · SQS · SNS · DynamoDB · RDS · S3 · API Gateway · ECS / Fargate · Kinesis Firehose · IAM</div>
+  <div class="sk"><b>Data &amp; Search:</b> PostgreSQL · Snowflake · OpenSearch · Redis / ElastiCache</div>
+  <div class="sk"><b>Architecture:</b> Distributed systems · Event-driven · Microservices · Caching · System design (LLD &amp; HLD) · Concurrency</div>
+  <div class="sk"><b>DevOps:</b> Docker · Terraform · AWS CDK · GitLab CI/CD · Snyk · New Relic · CloudWatch · Git</div>
+
+  <h2>Work Experience</h2>
+  <div class="job">
+    <div class="job-head"><span><span class="job-title">Senior Software Engineer</span> — <span class="job-org">Cimpress India (Remote-first)</span></span><span class="job-date">01/2025 – Present</span></div>
+    <ul>
+      <li>Primary author of a ~30-stage serverless AWS Step Functions enrichment pipeline integrating 8 third-party data providers, with exponential-backoff retries and a Firehose → S3 → Snowflake sink; each provider stage is independently deployable.</li>
+      <li>Re-architected the entity-resolution identity graph from DynamoDB to Amazon RDS (PostgreSQL), replacing check-then-skip logic with an atomic insert-or-retry concurrency model — eliminating duplicate/orphan records across 10+ teams and 100K+ entities (100% pass on the race-limit test harness).</li>
+      <li>Built an LLM-powered document-classification API, cutting classification latency 50% and manual effort 85% at under $0.01 per document (5K+ documents/month).</li>
+      <li>Cut manual pipeline intervention 80% with an automated failed-execution recovery system (EventBridge → DynamoDB → scheduled Fargate re-runs) with a polling Lambda and Slack alerting.</li>
+      <li>Raised reliability across 25+ microservices via 2,300+ code-review comments enforcing layered exception handling, least-privilege IAM, and type-safety contracts as merge gates — blocking high-severity defects (XSS, SSRF, ReDoS).</li>
+      <li>Automated secret rotation across 20+ repositories via a Secrets Manager-triggered Lambda (100% rotation-policy compliance); led remediation of 30+ Snyk security findings.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="job-head"><span><span class="job-title">Software Engineer</span> — <span class="job-org">Cimpress India (Remote-first)</span></span><span class="job-date">08/2022 – 12/2024</span></div>
+    <ul>
+      <li>Re-engineered a search API from 30s+ timeouts to under 5s by optimizing PostgreSQL full-text search (ts_query, ts_vector, ts_rank) and fixing a multi-word query-parsing bug.</li>
+      <li>Improved API performance 45% and reduced provider cost with a TTL-based DynamoDB caching layer across multiple regional pipelines.</li>
+      <li>Lifted industry-classification accuracy 40% with AI-assisted taxonomy mapping, and raised enrichment coverage from 41% to over 60% across 4,000+ records.</li>
+      <li>Established performance benchmarks with Apache JMeter (stable to 2,500 concurrent users, ~41 req/s, ~1.2s latency); right-sized Lambda memory via power tuning.</li>
+      <li>Reduced CI/CD failures 25% with 15+ test alert hooks and tuned GitLab runners; delivered secure, incremental releases including Snyk fixes and GDPR compliance workflows.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="job-head"><span><span class="job-title">Programmer Analyst Intern</span> — <span class="job-org">Cognizant Technology Solutions</span></span><span class="job-date">02/2022 – 07/2022</span></div>
+    <ul>
+      <li>Reduced IAM deployment time 25% by configuring directory schemas and automating admin-client setup for 3 access workflows.</li>
+      <li>Developed 30+ unit tests for identity modules, cutting QA iterations 20% and speeding feedback cycles.</li>
+    </ul>
+  </div>
+
+  <h2>Projects</h2>
+  <div class="job">
+    <div class="job-title">Company Enrichment API &amp; Evaluation Harness</div>
+    <ul><li>Python FastAPI + PostgreSQL service with a Redis cache, retry logic, and a dead-letter table; an evaluation harness computes per-field precision/recall behind a CI accuracy gate.</li></ul>
+  </div>
+  <div class="job">
+    <div class="job-title">MCP Server &amp; Retrieval-Augmented AI Agent</div>
+    <ul><li>Model Context Protocol server exposing tool-connected AI agents over public APIs, plus a LangGraph RAG agent over a vector database with authorization guardrails and an evaluation suite.</li></ul>
+  </div>
+
+  <div class="two">
+    <div style="flex:1">
+      <h2>Education</h2>
+      <p><b>B.E., Computer Science Engineering</b> — 2022<br>RNS Institute of Technology, Bengaluru · GPA 3.75 / 4.00</p>
+    </div>
+    <div style="flex:1">
+      <h2>Certifications</h2>
+      <p>AWS Certified Developer – Associate<br>AWS Certified Cloud Practitioner<br>Prompt Engineering — Vanderbilt University</p>
+    </div>
+  </div>
+</body>
+</html>
