@@ -1,15 +1,16 @@
-# Shreya Hasyagar — Portfolio
+# Shreya Hasyagar - Portfolio
 
 Personal portfolio website for **Shreya Hasyagar**, Senior Software Engineer (Python · AWS · Distributed Data Systems · Applied AI).
 
-🔗 **Live:** https://shreyahasyagar.github.io/shreya-portfolio/
+🔗 **Live:** https://shreyahasyagar.github.io/
 
 ## Stack
 
-Zero-build static site — fast, accessible, and hosted on GitHub Pages.
+Zero-build static site — fast, accessible, and hosted on GitHub Pages (user root domain).
 
 - Vanilla HTML5, CSS3 (custom properties, grid/flex), and JavaScript (no framework, no bundler)
-- `IntersectionObserver`-based scroll reveals and animated counters
+- Interactive: cursor spotlight, 3D tilt cards, magnetic buttons, typing effect, marquee, animated counters
+- `IntersectionObserver`-based scroll reveals and active-section nav highlighting
 - Responsive, dark-themed design with reduced-motion support
 - SEO + Open Graph metadata
 
@@ -31,4 +32,4 @@ python3 -m http.server 8080
 
 ## Deployment
 
-Served directly from the `main` branch root via GitHub Pages — no build step required.
+Served directly from the `main` branch root via GitHub Pages - no build step required.

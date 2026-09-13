@@ -3,101 +3,139 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shreya Hasyagar — Senior Software Engineer | Python · AWS · Applied AI</title>
-  <meta name="description" content="Senior Software Engineer with 4+ years building production, event-driven data-enrichment platforms on AWS. Distributed serverless systems, entity resolution, and applied LLM systems in Python." />
-  <meta name="author" content="Shreya Hasyagar" />
-  <meta name="theme-color" content="#0b0f19" />
+  <title>Shreya Uday Hasyagar — Senior Software Engineer · AWS · Python · Applied AI</title>
+  <meta name="description" content="Senior Software Engineer building scalable, resilient backend systems on AWS with Python and applied AI. Distributed serverless pipelines, entity resolution, GPT-driven automation, and reliability engineering." />
+  <meta name="author" content="Shreya Uday Hasyagar" />
+  <meta name="theme-color" content="#05070d" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Shreya Hasyagar — Senior Software Engineer" />
-  <meta property="og:description" content="Python · AWS · Distributed Data Systems · Applied AI. Building production serverless data-enrichment platforms." />
+  <meta property="og:title" content="Shreya Uday Hasyagar — Senior Software Engineer" />
+  <meta property="og:description" content="Building scalable systems with AWS & Python · GPT-driven automation · reliability engineering." />
   <meta property="og:url" content="https://shreyahasyagar.github.io/" />
-  <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="bg-grid" aria-hidden="true"></div>
-  <div class="bg-glow" aria-hidden="true"></div>
+  <!-- Ambient layers -->
+  <div class="aurora" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="spotlight" id="spotlight" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="pre-mark">SH</div>
+    <div class="pre-bar"><span></span></div>
+  </div>
 
   <!-- NAV -->
   <header class="nav" id="nav">
-    <a href="#top" class="brand">
+    <a href="#top" class="brand" data-magnetic>
       <span class="brand-mark">SH</span>
-      <span class="brand-name">Shreya Hasyagar</span>
+      <span class="brand-meta">
+        <span class="brand-name">Shreya Uday Hasyagar</span>
+        <span class="brand-role">Senior Software Engineer</span>
+      </span>
     </a>
     <nav class="nav-links" aria-label="Primary">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#about"><span>01</span> About</a>
+      <a href="#skills"><span>02</span> Skills</a>
+      <a href="#work"><span>03</span> Experience</a>
+      <a href="#projects"><span>04</span> Projects</a>
+      <a href="#contact"><span>05</span> Contact</a>
     </nav>
-    <a class="btn btn-ghost nav-cta" href="assets/Shreya_Hasyagar_Resume.md" download>Résumé</a>
+    <a class="btn btn-primary nav-cta" href="#contact" data-magnetic>Hire me</a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-      <span></span><span></span><span></span>
+      <span></span><span></span>
     </button>
   </header>
 
   <main id="top">
     <!-- HERO -->
     <section class="hero">
-      <div class="hero-inner reveal">
-        <p class="eyebrow">Senior Software Engineer · Bengaluru, India · Open to Remote (USD / EUR / GBP)</p>
-        <h1 class="hero-title">
-          I build <span class="grad">production data platforms</span><br />
-          on AWS with <span class="grad">applied AI</span>.
-        </h1>
-        <p class="hero-sub">
-          4+ years architecting event-driven, serverless data-enrichment systems in Python —
-          distributed pipelines, entity resolution, and LLM-powered classification across multi-tenant microservices.
+      <div class="hero-inner">
+        <p class="eyebrow reveal">
+          <span class="dot"></span> Available for Senior / Staff roles · Remote · USD · EUR · GBP
         </p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="#projects">View my work</a>
-          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        <h1 class="hero-title reveal">
+          I build <span class="grad">scalable, resilient</span>
+          backend systems that
+          <span class="type-wrap"><span class="typed" id="typed"></span><span class="caret">|</span></span>
+        </h1>
+        <p class="hero-sub reveal">
+          Senior Software Engineer at Cimpress with 4+ years designing event-driven,
+          serverless platforms on AWS &amp; Python — distributed data pipelines, entity
+          resolution, and GPT-driven automation that quietly makes systems (and teams) faster.
+        </p>
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="#projects" data-magnetic>Explore my work</a>
+          <a class="btn btn-ghost" href="assets/Shreya_Hasyagar_Resume.md" download data-magnetic>Download résumé</a>
         </div>
-        <div class="hero-stats">
-          <div class="stat"><span class="stat-num" data-count="4">0</span><span class="stat-label">Years shipping production</span></div>
-          <div class="stat"><span class="stat-num" data-count="30">0</span><span class="stat-label">Stage serverless pipeline</span></div>
-          <div class="stat"><span class="stat-num" data-count="25">0</span><span class="stat-label">Microservices hardened</span></div>
-          <div class="stat"><span class="stat-num" data-count="2300" data-suffix="+">0</span><span class="stat-label">Code-review comments</span></div>
+
+        <div class="hero-marquee reveal" aria-hidden="true">
+          <div class="marquee-track" id="marquee">
+            <span>AWS Lambda</span><span>Step Functions</span><span>Python</span><span>PostgreSQL</span>
+            <span>Snowflake</span><span>DynamoDB</span><span>Terraform</span><span>GPT-4</span>
+            <span>OpenSearch</span><span>Docker</span><span>TypeScript</span><span>GitLab CI/CD</span>
+          </div>
+        </div>
+
+        <div class="hero-stats reveal">
+          <div class="stat"><span class="stat-num" data-count="4" data-suffix="+">0</span><span class="stat-label">Years in production</span></div>
+          <div class="stat"><span class="stat-num" data-count="90" data-suffix="%">0</span><span class="stat-label">Fewer Org-ID errors</span></div>
+          <div class="stat"><span class="stat-num" data-count="85" data-suffix="%">0</span><span class="stat-label">Less manual classification</span></div>
+          <div class="stat"><span class="stat-num" data-count="25" data-suffix="+">0</span><span class="stat-label">Microservices shipped</span></div>
         </div>
       </div>
+      <div class="scroll-hint reveal" aria-hidden="true"><span></span>scroll</div>
     </section>
 
     <!-- ABOUT -->
     <section class="section" id="about">
       <div class="section-head reveal">
-        <span class="section-index">01</span>
-        <h2>About</h2>
+        <span class="section-kicker">01 — About</span>
+        <h2>Engineering that quietly makes things better.</h2>
       </div>
       <div class="about-grid">
-        <div class="reveal">
+        <div class="about-copy reveal">
           <p class="lead">
-            I own systems end to end — system design, reliability engineering, and AI-assisted automation.
-            My flagship is a multi-tenant, serverless company-data enrichment platform: a ~30-stage AWS Step
-            Functions pipeline integrating 8 third-party providers, backed by an entity-resolution identity
-            graph on PostgreSQL and Snowflake.
+            Hi, I'm Shreya. I'm a Senior Software Engineer who enjoys working behind the scenes —
+            designing backend systems that are clean, resilient, and genuinely useful.
           </p>
           <p>
-            I care about the hard parts — race-safe concurrency, deterministic LLM pipelines, cost-aware
-            inference, and the DLQ/retry/rate-governor tooling that keeps distributed systems alive at 3am.
+            Over the past few years I've worked on everything from AWS-powered microservices to
+            GPT-driven automation tools. What keeps me going is building things that reduce friction —
+            migrating a legacy system to improve reliability, or automating a repetitive task to free up
+            someone's time. I believe engineering is most valuable when it quietly makes life easier for
+            teams, users, and the business.
           </p>
+          <p>
+            I care about the hard parts: race-safe concurrency, deterministic LLM pipelines, cost-aware
+            inference, secret rotation, and the retry / DLQ / rate-governor tooling that keeps distributed
+            systems alive at 3am. I'm AWS-certified, trained in prompt engineering, and always up for a good
+            conversation about distributed systems, clean code, or underrated APIs.
+          </p>
+          <div class="about-tags">
+            <span>Distributed systems</span><span>Reliability engineering</span>
+            <span>Applied AI / LLM</span><span>Developer experience</span>
+          </div>
         </div>
-        <aside class="about-card reveal">
-          <h3>At a glance</h3>
-          <ul class="facts">
-            <li><span>Role</span><b>Senior Software Engineer</b></li>
-            <li><span>Focus</span><b>Distributed data · Applied AI</b></li>
-            <li><span>Stack</span><b>Python · AWS · Snowflake</b></li>
-            <li><span>Location</span><b>Bengaluru · Remote-ready</b></li>
-            <li><span>Certs</span><b>AWS Dev Associate, CCP</b></li>
-          </ul>
+        <aside class="about-panel reveal" data-tilt>
+          <div class="panel-row"><span>Role</span><b>Senior Software Engineer</b></div>
+          <div class="panel-row"><span>Company</span><b>Cimpress India</b></div>
+          <div class="panel-row"><span>Base</span><b>Bengaluru · Remote-ready</b></div>
+          <div class="panel-row"><span>Focus</span><b>Backend · Cloud · AI</b></div>
+          <div class="panel-row"><span>Recognition</span><b>Top 10% — Communication</b></div>
+          <div class="panel-divider"></div>
+          <div class="panel-certs">
+            <span class="cert">AWS Certified Developer – Associate</span>
+            <span class="cert">Oracle Cloud Infrastructure 2024 — GenAI Professional</span>
+            <span class="cert">Prompt Engineering — Vanderbilt</span>
+          </div>
         </aside>
       </div>
     </section>
@@ -105,100 +143,118 @@
     <!-- SKILLS -->
     <section class="section" id="skills">
       <div class="section-head reveal">
-        <span class="section-index">02</span>
-        <h2>Technical skills</h2>
+        <span class="section-kicker">02 — Toolkit</span>
+        <h2>A full-stack toolkit, backend-heavy.</h2>
       </div>
       <div class="skills-grid">
-        <article class="skill-card reveal">
-          <h3>Languages</h3>
+        <article class="skill-card reveal" data-tilt>
+          <div class="skill-ic">&lt;/&gt;</div>
+          <h3>Languages &amp; Frameworks</h3>
           <div class="chips">
-            <span>Python</span><span>SQL</span><span>TypeScript</span><span>JavaScript</span><span>Kotlin</span><span>Bash</span>
+            <span>Python</span><span>JavaScript</span><span>TypeScript</span><span>SQL</span><span>Node.js</span><span>React.js</span><span>Bash</span><span>Karate</span>
           </div>
         </article>
-        <article class="skill-card reveal">
-          <h3>Backend &amp; APIs</h3>
+        <article class="skill-card reveal" data-tilt>
+          <div class="skill-ic">☁</div>
+          <h3>Cloud &amp; Infrastructure</h3>
           <div class="chips">
-            <span>FastAPI</span><span>Flask</span><span>Django REST</span><span>Spring Boot</span><span>SQLAlchemy</span><span>asyncio</span>
+            <span>Lambda</span><span>Step Functions</span><span>API Gateway</span><span>RDS</span><span>DynamoDB</span><span>S3</span><span>ECS / ECR</span><span>SNS</span><span>Secrets Manager</span><span>CloudWatch</span><span>IAM</span><span>Terraform</span>
           </div>
         </article>
-        <article class="skill-card reveal">
+        <article class="skill-card reveal" data-tilt>
+          <div class="skill-ic">✦</div>
           <h3>Applied AI / LLM</h3>
           <div class="chips">
-            <span>OpenAI GPT-4.x</span><span>Prompt Engineering</span><span>RAG</span><span>Vector DBs</span><span>MCP</span><span>LangGraph</span><span>Evals</span>
+            <span>GPT-4 / 4o</span><span>Prompt Engineering</span><span>Document Intent</span><span>RAG</span><span>Vector DBs</span><span>MCP</span><span>LangGraph</span><span>Evals</span>
           </div>
         </article>
-        <article class="skill-card reveal">
-          <h3>Cloud (AWS)</h3>
+        <article class="skill-card reveal" data-tilt>
+          <div class="skill-ic">⛁</div>
+          <h3>Data &amp; Engineering</h3>
           <div class="chips">
-            <span>Lambda</span><span>Step Functions</span><span>SQS / SNS</span><span>DynamoDB</span><span>RDS</span><span>ECS / Fargate</span><span>API Gateway</span><span>Kinesis</span>
+            <span>PostgreSQL</span><span>Snowflake</span><span>OpenSearch</span><span>Caching</span><span>Data Pipelines</span><span>Data Migrations</span>
           </div>
         </article>
-        <article class="skill-card reveal">
-          <h3>Data &amp; Search</h3>
+        <article class="skill-card reveal" data-tilt>
+          <div class="skill-ic">⚙</div>
+          <h3>Backend &amp; DevOps</h3>
           <div class="chips">
-            <span>PostgreSQL</span><span>Snowflake</span><span>OpenSearch</span><span>DynamoDB</span><span>Redis</span>
+            <span>REST APIs</span><span>Microservices</span><span>System Design</span><span>Async Workflows</span><span>GitLab CI/CD</span><span>Docker</span><span>Git</span>
           </div>
         </article>
-        <article class="skill-card reveal">
-          <h3>DevOps &amp; Reliability</h3>
+        <article class="skill-card reveal" data-tilt>
+          <div class="skill-ic">🛡</div>
+          <h3>Reliability &amp; Security</h3>
           <div class="chips">
-            <span>Docker</span><span>Terraform</span><span>AWS CDK</span><span>GitLab CI/CD</span><span>Snyk</span><span>New Relic</span><span>CloudWatch</span>
+            <span>DLQ &amp; Retries</span><span>Rate Governors</span><span>Secret Rotation</span><span>Snyk</span><span>Least-privilege IAM</span><span>Observability</span>
           </div>
         </article>
       </div>
     </section>
 
     <!-- EXPERIENCE -->
-    <section class="section" id="experience">
+    <section class="section" id="work">
       <div class="section-head reveal">
-        <span class="section-index">03</span>
-        <h2>Experience</h2>
+        <span class="section-kicker">03 — Experience</span>
+        <h2>4+ years shipping systems people rely on.</h2>
       </div>
       <div class="timeline">
         <article class="tl-item reveal">
-          <div class="tl-dot"></div>
-          <div class="tl-body">
-            <div class="tl-top">
-              <h3>Senior Software Engineer</h3>
-              <span class="tl-date">01/2025 — Present</span>
+          <div class="tl-marker"></div>
+          <div class="tl-card" data-tilt>
+            <div class="tl-head">
+              <div>
+                <h3>Senior Software Engineer</h3>
+                <p class="tl-org">Cimpress India Pvt Ltd · Bengaluru</p>
+              </div>
+              <span class="tl-date">Jan 2025 — Present</span>
             </div>
-            <p class="tl-org">Cimpress India Pvt Ltd · Bengaluru</p>
             <ul>
-              <li>Architected and own a ~30-stage serverless Step Functions enrichment pipeline integrating 8 data providers with exponential-backoff retries and a Firehose→S3→Snowflake sink.</li>
-              <li>Reduced Organization-ID system failures <b>60%</b> by re-architecting the entity-resolution identity graph from DynamoDB to RDS (PostgreSQL) with an atomic insert-or-retry concurrency model.</li>
-              <li>Redesigned the GPT-4 Document Intent API from async ECS workers to synchronous inference — <b>50%</b> lower latency, <b>85%</b> less manual classification, at &lt;$0.01/document.</li>
-              <li>Cut manual pipeline intervention <b>80%</b> with an automated failed-execution recovery system (EventBridge → DynamoDB → scheduled Fargate re-runs).</li>
-              <li>Authored <b>2,300+</b> code-review comments enforcing layered exception handling, least-privilege IAM, and type-safety across 25+ microservices.</li>
+              <li>Redesigned the <b>Organization-ID</b> system by migrating from DynamoDB to Amazon RDS — cutting query errors <b>90%</b> and scaling access for 100K+ records across 10+ teams.</li>
+              <li>Deployed a <b>GPT-4 Document Intent API</b>, automating classification for 5K+ documents/month and minimizing manual work by <b>85%</b> in a modular architecture.</li>
+              <li>Implemented an automated <b>RFC-compliant secret rotation</b> workflow with Terraform, eliminating manual steps across 12+ services and improving audit-readiness.</li>
+              <li>Led architecture spikes for <b>OCR v2, Akeyless integration, and GPT use cases</b> — improving design clarity and delivery velocity.</li>
+              <li>Mentored an intern across 2 quarters — 10+ merged PRs and 3 production deployments — and reduced delivery rework <b>30%</b> across 12+ sprints.</li>
+              <li>Recognized in the <b>top 10% for communication excellence</b>; documented 5+ major platform updates, cutting integration blockers <b>35%</b>.</li>
             </ul>
           </div>
         </article>
+
         <article class="tl-item reveal">
-          <div class="tl-dot"></div>
-          <div class="tl-body">
-            <div class="tl-top">
-              <h3>Software Engineer</h3>
-              <span class="tl-date">08/2022 — 12/2024</span>
+          <div class="tl-marker"></div>
+          <div class="tl-card" data-tilt>
+            <div class="tl-head">
+              <div>
+                <h3>Software Engineer</h3>
+                <p class="tl-org">Cimpress India Pvt Ltd · Bengaluru</p>
+              </div>
+              <span class="tl-date">Aug 2022 — Dec 2024</span>
             </div>
-            <p class="tl-org">Cimpress India Pvt Ltd · Bengaluru</p>
             <ul>
-              <li>Re-engineered the Business Suggest search API from 30s+ timeouts to under <b>5s</b> via PostgreSQL full-text search tuning (ts_query, ts_vector, ts_rank).</li>
-              <li>Improved API performance <b>45%</b> with a TTL DynamoDB caching layer across BE/NL/FR pipelines.</li>
-              <li>Increased industry-classification accuracy <b>40%</b> and lifted enrichment coverage from 41% to <b>60%+</b>.</li>
-              <li>Benchmarked with JMeter to <b>2,500</b> concurrent users (~41 req/s, ~1.2s latency); right-sized Lambda memory via power tuning.</li>
+              <li>Engineered a <b>TTL-based DynamoDB cache</b>, cutting redundant queries and improving API performance <b>45%</b> across high-traffic microservices.</li>
+              <li>Developed <b>GPT-driven SIC → SBI mapping</b>, boosting taxonomy precision and analytics data integrity <b>40%</b>.</li>
+              <li>Integrated <b>Spyfu, SeRanking &amp; Graydon</b>, giving 5 business teams real-time SEO/KVK insights and cutting manual research <b>50%</b>.</li>
+              <li>Optimized CI/CD with 15+ test alert hooks and tuned GitLab runners, reducing deployment failures <b>25%</b>.</li>
+              <li>Automated <b>Karate</b> API suites, tuned Lambda timeouts, and improved Slack alerting — reducing bug-resolution time.</li>
+              <li>Delivered secure, incremental updates including <b>Snyk vulnerability fixes</b> and Printdeal GDPR compliance workflows.</li>
             </ul>
           </div>
         </article>
+
         <article class="tl-item reveal">
-          <div class="tl-dot"></div>
-          <div class="tl-body">
-            <div class="tl-top">
-              <h3>Programmer Analyst Intern</h3>
-              <span class="tl-date">02/2022 — 07/2022</span>
+          <div class="tl-marker"></div>
+          <div class="tl-card" data-tilt>
+            <div class="tl-head">
+              <div>
+                <h3>Programmer Analyst Trainee</h3>
+                <p class="tl-org">Cognizant Technology Solutions · Bengaluru</p>
+              </div>
+              <span class="tl-date">Feb 2022 — Jul 2022</span>
             </div>
-            <p class="tl-org">Cognizant Technology Solutions · Bengaluru</p>
             <ul>
-              <li>Reduced IAM deployment time <b>25%</b> by automating directory schemas and admin-client setup.</li>
-              <li>Developed 30+ unit tests for identity modules, cutting QA iterations <b>20%</b>.</li>
+              <li>Automated <b>IAM workflows</b> and directory schemas, reducing deployment setup time <b>25%</b>.</li>
+              <li>Wrote 30+ unit tests for identity services, cutting QA feedback loops <b>20%</b> and strengthening CI pipelines.</li>
+              <li>Authored reusable onboarding docs &amp; SDLC templates used across 3 intern cohorts. Recognized as a <b>Top Performing Intern</b>.</li>
             </ul>
           </div>
         </article>
@@ -208,80 +264,136 @@
     <!-- PROJECTS -->
     <section class="section" id="projects">
       <div class="section-head reveal">
-        <span class="section-index">04</span>
-        <h2>Selected projects</h2>
+        <span class="section-kicker">04 — Selected work</span>
+        <h2>Systems, pipelines &amp; a bit of research.</h2>
       </div>
       <div class="projects-grid">
-        <article class="project-card reveal">
+        <article class="project-card reveal feature" data-tilt>
           <div class="project-top">
-            <h3>Serverless Enrichment Pipeline</h3>
             <span class="badge">Flagship</span>
+            <span class="project-idx">/01</span>
           </div>
-          <p>~30-stage AWS Step Functions DAG integrating 8 providers as single-responsibility Lambdas, with exponential-backoff retries and a Firehose→S3→Snowflake sink. Independently deployable provider stages, zero blast radius.</p>
+          <h3>Serverless Enrichment Pipeline</h3>
+          <p>A ~30-stage AWS Step Functions DAG integrating 8 third-party providers as single-responsibility Lambdas, with exponential-backoff retries and a Firehose → S3 → Snowflake sink. Independently deployable stages, zero blast radius.</p>
           <div class="tags"><span>Step Functions</span><span>Lambda</span><span>Snowflake</span><span>pytest</span></div>
         </article>
-        <article class="project-card reveal">
-          <div class="project-top">
-            <h3>Entity-Resolution Identity Graph</h3>
-          </div>
-          <p>Race-safe "one identifier → one org" resolution on PostgreSQL/SQLAlchemy with optimistic-concurrency merge logic, DB-enforced uniqueness, and bounded retry semantics distinguishing stale identifiers from concurrent writes.</p>
+        <article class="project-card reveal" data-tilt>
+          <div class="project-top"><span class="project-idx">/02</span></div>
+          <h3>Entity-Resolution Identity Graph</h3>
+          <p>Race-safe "one identifier → one org" resolution on PostgreSQL/SQLAlchemy with optimistic-concurrency merge logic, DB-enforced uniqueness, and bounded retries distinguishing stale identifiers from concurrent writes.</p>
           <div class="tags"><span>PostgreSQL</span><span>SQLAlchemy</span><span>Concurrency</span></div>
         </article>
-        <article class="project-card reveal">
-          <div class="project-top">
-            <h3>Deterministic LLM Classifier</h3>
-          </div>
-          <p>GPT-4.1-mini industry classification at temperature 0, JSON-mode, taxonomy-constrained decoding with a deterministic L2→L1 map. Cache-aside on DynamoDB TTL so the LLM is only hit on misses.</p>
+        <article class="project-card reveal" data-tilt>
+          <div class="project-top"><span class="project-idx">/03</span></div>
+          <h3>Deterministic GPT Classifier</h3>
+          <p>GPT-4.1-mini industry classification at temperature 0, JSON-mode, taxonomy-constrained decoding with a deterministic L2→L1 map. Cache-aside on DynamoDB TTL, so the model is only hit on misses.</p>
           <div class="tags"><span>OpenAI</span><span>DynamoDB</span><span>Prompt Eng</span></div>
         </article>
-        <article class="project-card reveal">
+        <article class="project-card reveal" data-tilt>
           <div class="project-top">
-            <h3>Company Enrichment API + Eval Harness</h3>
+            <span class="project-idx">/04</span>
             <a class="project-link" href="https://github.com/shreyahasyagar" target="_blank" rel="noopener" aria-label="GitHub">↗</a>
           </div>
-          <p>Python FastAPI + PostgreSQL service with Redis cache, retry logic, and a dead-letter table. Evaluation harness computes per-field precision/recall behind a CI accuracy gate.</p>
+          <h3>Enrichment API + Eval Harness</h3>
+          <p>Python FastAPI + PostgreSQL service with Redis cache, retry logic, and a dead-letter table. Eval harness computes per-field precision/recall behind a CI accuracy gate.</p>
           <div class="tags"><span>FastAPI</span><span>PostgreSQL</span><span>GitHub Actions</span></div>
         </article>
-        <article class="project-card reveal">
+        <article class="project-card reveal" data-tilt>
           <div class="project-top">
-            <h3>Event-Driven Worker + Rate Governor</h3>
+            <span class="project-idx">/05</span>
             <a class="project-link" href="https://github.com/shreyahasyagar" target="_blank" rel="noopener" aria-label="GitHub">↗</a>
           </div>
-          <p>Producer/consumer system with a distributed token-bucket rate governor, per-tenant fair queuing, exponential backoff with jitter, and DLQ redrive to prevent downstream throttling.</p>
-          <div class="tags"><span>Python</span><span>SQS</span><span>DynamoDB</span></div>
-        </article>
-        <article class="project-card reveal">
-          <div class="project-top">
-            <h3>MCP Server + RAG Agent</h3>
-            <a class="project-link" href="https://github.com/shreyahasyagar" target="_blank" rel="noopener" aria-label="GitHub">↗</a>
-          </div>
-          <p>Model Context Protocol server exposing tool-connected AI agents over public APIs, plus a LangGraph RAG agent over a vector database with authorization guardrails and an evaluation suite.</p>
+          <h3>MCP Server + RAG Agent</h3>
+          <p>A Model Context Protocol server exposing tool-connected AI agents over public APIs, plus a LangGraph RAG agent over a vector database with authorization guardrails and an evaluation suite.</p>
           <div class="tags"><span>MCP</span><span>LangGraph</span><span>Vector DB</span></div>
+        </article>
+        <article class="project-card reveal" data-tilt>
+          <div class="project-top"><span class="project-idx">/06</span></div>
+          <h3>Underwater Image Enhancement — cGAN</h3>
+          <p>A conditional GAN in Python &amp; TensorFlow that enhances underwater imagery — improving clarity and color correction, validated through quantitative metrics and visual inspection. Final-year research.</p>
+          <div class="tags"><span>TensorFlow</span><span>cGAN</span><span>Computer Vision</span></div>
         </article>
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- CONTACT / EMAIL TAB -->
     <section class="section contact" id="contact">
-      <div class="reveal contact-inner">
-        <span class="section-index">05</span>
-        <h2>Let's build something reliable.</h2>
-        <p class="lead">
+      <div class="section-head center reveal">
+        <span class="section-kicker">05 — Contact</span>
+        <h2>Let's build something reliable together.</h2>
+        <p class="contact-lead">
           Open to Senior / Staff SDE roles — remote or relocation, paid in USD / EUR / GBP.
-          The fastest way to reach me is email.
+          If you're solving meaningful infrastructure problems or exploring where backend meets AI, I'd love to connect.
         </p>
-        <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:shreya.uday.hasyagar@gmail.com">shreya.uday.hasyagar@gmail.com</a>
-          <a class="btn btn-ghost" href="https://github.com/shreyahasyagar" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn btn-ghost" href="https://www.linkedin.com/in/shreyahasyagar" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+
+      <div class="contact-card reveal" data-tilt>
+        <div class="contact-tabs" role="tablist" aria-label="Contact channels">
+          <button class="tab active" data-tab="email" role="tab" aria-selected="true">✉ Email</button>
+          <button class="tab" data-tab="phone" role="tab" aria-selected="false">☎ Phone</button>
+          <button class="tab" data-tab="social" role="tab" aria-selected="false">🌐 Social</button>
+          <button class="tab" data-tab="location" role="tab" aria-selected="false">📍 Location</button>
+        </div>
+
+        <div class="tab-body">
+          <div class="tab-pane active" data-pane="email">
+            <span class="pane-label">Primary email</span>
+            <a class="pane-value" href="mailto:shreya.uday.hasyagar@gmail.com">shreya.uday.hasyagar@gmail.com</a>
+            <p class="pane-note">Best way to reach me — I usually reply within a day.</p>
+            <div class="pane-actions">
+              <a class="btn btn-primary" href="mailto:shreya.uday.hasyagar@gmail.com?subject=Opportunity%20for%20Shreya" data-magnetic>Send an email</a>
+              <button class="btn btn-ghost copy-btn" data-copy="shreya.uday.hasyagar@gmail.com" data-magnetic>Copy address</button>
+            </div>
+          </div>
+
+          <div class="tab-pane" data-pane="phone">
+            <span class="pane-label">Phone / WhatsApp</span>
+            <a class="pane-value" href="tel:+917892618923">+91 78926 18923</a>
+            <p class="pane-note">Available for calls during IST business hours and by appointment across time zones.</p>
+            <div class="pane-actions">
+              <a class="btn btn-primary" href="tel:+917892618923" data-magnetic>Call</a>
+              <button class="btn btn-ghost copy-btn" data-copy="+917892618923" data-magnetic>Copy number</button>
+            </div>
+          </div>
+
+          <div class="tab-pane" data-pane="social">
+            <span class="pane-label">Around the web</span>
+            <div class="social-links">
+              <a class="social-row" href="https://www.linkedin.com/in/shreya-hasyagar" target="_blank" rel="noopener">
+                <span class="s-ic">in</span><span class="s-name">LinkedIn</span><span class="s-handle">/in/shreya-hasyagar</span><span class="s-arrow">↗</span>
+              </a>
+              <a class="social-row" href="https://github.com/shreyahasyagar" target="_blank" rel="noopener">
+                <span class="s-ic">gh</span><span class="s-name">GitHub</span><span class="s-handle">@shreyahasyagar</span><span class="s-arrow">↗</span>
+              </a>
+              <a class="social-row" href="mailto:shreya.uday.hasyagar@gmail.com">
+                <span class="s-ic">@</span><span class="s-name">Email</span><span class="s-handle">shreya.uday.hasyagar@gmail.com</span><span class="s-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="tab-pane" data-pane="location">
+            <span class="pane-label">Based in</span>
+            <span class="pane-value">Bengaluru, Karnataka · India</span>
+            <p class="pane-note">Open to remote roles worldwide and relocation for the right team. Comfortable collaborating async across time zones.</p>
+            <div class="pane-actions">
+              <span class="tz-badge">IST · UTC +5:30</span>
+              <span class="tz-badge">Remote-ready</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© <span id="year"></span> Shreya Hasyagar · Built with vanilla HTML, CSS &amp; JS · Hosted on GitHub Pages</p>
+    <div class="footer-inner">
+      <span class="footer-mark">SH</span>
+      <p>© <span id="year"></span> Shreya Uday Hasyagar — designed &amp; built from scratch. Hosted on GitHub Pages.</p>
+      <a href="#top" class="to-top" data-magnetic>Back to top ↑</a>
+    </div>
   </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script src="main.js"></script>
 </body>
