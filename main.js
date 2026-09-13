@@ -117,11 +117,11 @@ document.querySelectorAll(".stat-num").forEach((el) => statIo.observe(el));
 
 // ---------- Typing effect ----------
 const phrases = [
-  "scale without losing clarity.",
-  "recover themselves at 3am.",
-  "turn AI into real automation.",
-  "resolve identities, race-safe.",
-  "quietly make teams faster.",
+  "scale cleanly.",
+  "heal at 3am.",
+  "automate with AI.",
+  "resolve safely.",
+  "move faster.",
 ];
 const typedEl = document.getElementById("typed");
 if (typedEl && !reduce) {
