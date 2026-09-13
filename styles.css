@@ -180,7 +180,7 @@ h1, h2, h3, .brand-name { font-family: "Sora", "Inter", sans-serif; }
 @keyframes ping { 0%{box-shadow:0 0 0 0 var(--accent-glow)} 100%{box-shadow:0 0 0 10px transparent} }
 .hero-title { font-size: clamp(2.5rem, 6.2vw, 5rem); line-height: 1.04; font-weight: 800; letter-spacing: -2px; }
 .grad { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
-.type-wrap { display: inline-flex; align-items: baseline; }
+.type-wrap { display: flex; align-items: baseline; min-height: 1.1em; }
 .typed { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .caret { color: var(--c3); font-weight: 400; animation: blink 1s steps(2) infinite; margin-left: 2px; }
 @keyframes blink { 50% { opacity: 0; } }
