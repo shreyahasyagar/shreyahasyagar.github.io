@@ -1,6 +1,23 @@
 // ---------- Year ----------
 document.getElementById("year").textContent = new Date().getFullYear();
 
+// ---------- Theme toggle ----------
+(() => {
+  const root = document.documentElement;
+  const saved = localStorage.getItem("theme");
+  const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+  const initial = saved || (prefersLight ? "light" : "dark");
+  root.setAttribute("data-theme", initial);
+  const btn = document.getElementById("themeToggle");
+  if (btn) {
+    btn.addEventListener("click", () => {
+      const next = root.getAttribute("data-theme") === "light" ? "dark" : "light";
+      root.setAttribute("data-theme", next);
+      localStorage.setItem("theme", next);
+    });
+  }
+})();
+
 // ---------- Preloader ----------
 window.addEventListener("load", () => {
   const pre = document.getElementById("preloader");
@@ -116,14 +133,15 @@ if (typedEl && !reduce) {
       ci++;
     } else if (!deleting && ci === word.length) {
       deleting = true;
-      return setTimeout(type, 1800);
+      return setTimeout(type, 2600);
     } else if (deleting && ci > 0) {
       ci--;
     } else {
       deleting = false;
       pi = (pi + 1) % phrases.length;
+      return setTimeout(type, 420);
     }
-    setTimeout(type, deleting ? 34 : 62);
+    setTimeout(type, deleting ? 42 : 88);
   }
   type();
 } else if (typedEl) {

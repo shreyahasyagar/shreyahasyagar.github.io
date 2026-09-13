@@ -6,12 +6,12 @@ Personal portfolio website for **Shreya Hasyagar**, Senior Software Engineer (Py
 
 ## Stack
 
-Zero-build static site — fast, accessible, and hosted on GitHub Pages (user root domain).
+Zero-build static site - fast, accessible, and hosted on GitHub Pages (user root domain).
 
 - Vanilla HTML5, CSS3 (custom properties, grid/flex), and JavaScript (no framework, no bundler)
 - Interactive: cursor spotlight, 3D tilt cards, magnetic buttons, typing effect, marquee, animated counters
 - `IntersectionObserver`-based scroll reveals and active-section nav highlighting
-- Responsive, dark-themed design with reduced-motion support
+- Responsive, light/dark themed design (with a persisted theme toggle) and reduced-motion support
 - SEO + Open Graph metadata
 
 ## Structure
